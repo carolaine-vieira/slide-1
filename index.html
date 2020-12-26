@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--[if lt IE 9]> <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400italic,700|Playfair+Display:400,400italic,600,600italic,700" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script2.js"></script>
+        <script>
+            function cv_slide_controls(){
+                cv_s_dotsControls = true;
+                cv_s_arrowControls = true;
+                cv_s_autoplay = true;
+                cv_s_timeSlide = 3000; //em milisegundos
+                cv_s_otherControls = true; //pause
+            }
+        </script>
+        <link href="style2.css" rel="stylesheet" type="text/css">    
+    </head>
+    <body>
+
+        <div id="slide-container">
+            <div id="arrow-buttons">
+                <div class="previous"><a><span class="lnr lnr-chevron-left"></span> Previous</a></div>
+                <div class="next"><a>Next <span class="lnr lnr-chevron-right"></span></a></div>                
+            </div>
+            
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1608770764376-9c94a33959cf?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" />                    
+                </div>                
+                <div class="slide-description">
+                    <h2>Lucy in the sky</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1608776934153-5857dde89c57?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" />                    
+                </div>                
+                <div class="slide-description">
+                    <h2>Lucy in the sky</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1608767468012-04b299258c7b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" />                    
+                </div>                
+                <div class="slide-description">
+                    <h2>Lucy in the sky</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+            <div id="dots-buttons"></div>
+        </div>
+
+    </body>
+</html>

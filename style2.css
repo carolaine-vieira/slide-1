@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    background-color: cornsilk;
+}
+
+h2 {
+    font-family: Playfair Display;
+}
+
+#slide-container {
+    position: relative;
+}
+#slide-container .slide {
+    top:0;    
+    width: 100%;    
+    height:300px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    background: #dfdfdf;    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+  
+#slide-container .active {
+    z-index: 2;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#slide-container #arrow-buttons {
+    margin: 0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+#slide-container #arrow-buttons .next a,
+#slide-container #arrow-buttons .previous a {
+    cursor: pointer;
+    color: white;
+    background: #000;    
+    padding:10px;
+}
+#slide-container #arrow-buttons .next {
+    bottom:10px;
+    right:0;
+    position: absolute;
+    z-index: 4;
+}
+#slide-container #arrow-buttons .previous {
+    margin-top: 9px;
+    position: absolute;
+    z-index: 4;
+}
+#slide-container .slide-image {
+    width:60%;
+    -webkit-animation: slide-bottom 1.5s 1;
+    animation: slide-bottom 1.5s 1;
+}
+#slide-container .slide-image img{
+    width:100%;
+}
+#slide-container .slide-description {
+    background: #fff;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: calc(100% - 40px);
+    width: 40%;
+    padding:20px 30px;
+    text-align: justify;
+}
+#slide-container .slide-description p {
+    max-height: 50%;
+    padding: 10px;
+    overflow-y: auto;
+}
+#slide-container #dots-buttons {
+    bottom:10px;
+    left:0;
+    width: calc(100% - 40% - 80px);
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    display: none;
+}
+#slide-container #dots-buttons a {
+    width:8%;
+    height:5px;
+    background:#000;
+    display: inline-block;
+    margin:0 3px 3px 3px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+#slide-container #dots-buttons a:active,
+#slide-container #dots-buttons a:focus,
+#slide-container #dots-buttons a.active {
+    opacity: 1;
+}
+#slide-container .other-controls {
+    width: calc(100% - 60% + 80px);
+    text-align: left;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 4;
+}
+#slide-container .other-controls a.pause_button {
+    display: inline-block;
+    padding:10px 15px 12px 15px;
+    font-family: Montserrat;
+    margin:0px 0 0 -25px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* effects */
+@-webkit-keyframes slide-left {
+    50% {
+        margin-left:-100px;
+    }
+ }
+@keyframes slide-left {
+    50% {
+        margin-left:-100px;
+    }
+}
+
+@-webkit-keyframes scale-rotate {
+    50% {
+        -moz-transform: scale(1.2) rotate(-10deg);
+        -webkit-transform: scale(1.2) rotate(-10deg);
+        -o-transform: scale(1.2) rotate(-10deg);
+        -ms-transform: scale(1.2) rotate(-10deg);
+        transform: scale(1.2) rotate(-10deg);
+    }
+ }
+@keyframes scale-rotate {
+    50% {
+        -moz-transform: scale(1.2) rotate(-10deg);
+        -webkit-transform: scale(1.2) rotate(-10deg);
+        -o-transform: scale(1.2) rotate(-10deg);
+        -ms-transform: scale(1.2) rotate(-10deg);
+        transform: scale(1.2) rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        margin-top: -80px;
+    }
+ }
+@keyframes slide-bottom {
+    0% {
+        margin-top: -80px;
+    }
+}
